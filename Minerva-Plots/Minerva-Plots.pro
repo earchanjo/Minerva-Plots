@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui widgets printsupport
+QT       += core gui widgets printsupport serialport
 
 TARGET = Minerva-Plots
 TEMPLATE = app
@@ -25,11 +25,15 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    qcustomplot.cpp
+    qcustomplot.cpp \
+    axistag.cpp \
+    comserial.cpp
 
 HEADERS += \
         mainwindow.h \
-    qcustomplot.h
+    qcustomplot.h \
+    axistag.h \
+    comserial.h
 
 FORMS += \
         mainwindow.ui
